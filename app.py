@@ -19,9 +19,9 @@ def background_thread():
     """Example of how to send server generated events to clients."""
     count = 0
     while True:
-        socketio.sleep(3)
+        socketio.sleep(1)
         count += 1
-        vid = ((requests.get(url)).json())['records'][-1]['vid']
+        vid = ((requests.get(url)).json())['records'][-1]['tdata']
         socketio.emit('my_response',
                       {'data': 'vid' + vid, 'count': count})
 
