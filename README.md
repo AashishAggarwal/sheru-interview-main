@@ -8,14 +8,15 @@
 
 ## Directory 
 
----Sheru Interview
-  |
-  |---Templates
-  |     |
-  |     |---Index.html, control.html
-  |
-  |
-  |---server.py, iot.py
+    .
+    ├── ...
+    ├── templates                     # Template files
+    │   ├── Index.html                # Server/ Alerts Webpage
+    │   └── control.html              # IoT Control Menu page
+    │             
+    ├── server.py             # Server app Script
+    └── iot.py                # IoT device app script
+    
   
  ## Tech Stack 
  - Python
